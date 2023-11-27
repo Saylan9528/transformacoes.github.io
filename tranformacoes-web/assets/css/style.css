@@ -1,0 +1,636 @@
+/* Gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #444;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+.container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+p, li {
+    font-size: 14px;
+}
+
+/* Barra de Navegação */
+.navbar {
+    min-height: 50px;
+    background: linear-gradient(to right, #55CDFC 20%, #F7A8B8 20%, #F7A8B8 40%, #fff 40%, #fff 60%, #F7A8B8 60%, #F7A8B8 80%, #55CDFC 80%, #55CDFC);
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 75px;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: #FFF;
+    /* Branco */
+    transition: color 0.3s;
+    /* Adiciona transição suave à cor ao passar o mouse */
+}
+
+/* Testes navbar */
+.navbar-nav a {
+    position: relative;
+    color: #FFF;
+    /* Cor do texto padrão */
+    overflow: hidden;
+}
+
+.navbar-nav a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, #E70010 16.66%, #FF8C00 16.66%, #FF8C00 33.33%, #FFED00 33.33%, #FFED00 50%, #008026 50%, #008026 66.66%, #4040FF 66.66%, #4040FF 83.33%, #9B4F96 83.33%, #9B4F96 100%);
+    /* Cor do sublinhado */
+    transition: width 0.3s;
+    
+}
+
+.navbar-nav a:hover {
+    color: white;
+    
+}
+
+.navbar-nav a:hover::before {
+    width: 100%;
+    
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
+
+.rosa {
+    color: #F7A8B8;
+}
+
+.azul {
+    color: #55CDFC;
+
+}
+
+/*Slider*/
+.container-fluid{
+    padding: 0;
+}
+
+#mainSide .carousel-inner,
+#mainSide .carousel-item {
+    height: 90vh;
+}
+#mainSide .carousel-caption{
+    top: 30%;
+}
+
+#mainSide .carousel-caption h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+#mainSide .carousel-caption p{
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    color: #FFF;
+    
+}
+
+
+.main-btn{
+    color: #FFF;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+}
+
+.main-btn:hover{
+    text-decoration: none;
+    color: #FFF;
+    background-color:#F7A8B8 ;
+    border-color: #55CDFC ;
+}
+/*Sobre a Ong*/
+.main-title{
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.main-title::after {
+    content: "";
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+    background: linear-gradient(to right, #55CDFC, #55CDFC 20%, #F7A8B8 20%, #F7A8B8 40%, #fff 40%, #fff 60%, #F7A8B8 60%, #F7A8B8 80%, #55CDFC 80%, #55CDFC);
+    height: 2px;
+}
+
+/*Postagem*/
+.card {
+    background-color: #fff;
+    /* Cor de fundo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra do card */
+    border-radius: 10px;
+    /* Borda arredondada */
+    transition: transform 0.3s;
+    margin: 20px;
+    width: 100%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Efeito de escala ao passar o mouse */
+}
+
+.card img {
+    width: 90%;
+    max-height: 150px;
+    object-fit: cover;
+    margin: 10px auto;
+}
+
+.card i {
+    font-size: 4em;
+    /* Ajuste conforme necessário */
+    color: #F7A8B8;
+    /* Ajuste a cor conforme necessário */
+    margin-bottom: 10px;
+}
+
+.post-btn {
+    color: #fff;
+    background-color: #55CDFC;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+}
+
+.post-btn:hover {
+    text-decoration: none;
+    color: #FFF;
+    background-color: #F7A8B8;
+    border-color: #55CDFC;
+}
+
+.card-body{
+    text-align: center;
+}
+
+/*Time*/
+#time-menu .card-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    position: relative;
+}
+
+#time-menu .card-title::after {
+    content: "";
+    width: 15%;
+    position: absolute;
+    bottom: 0;
+    left: 42.5%;
+    background: linear-gradient(to right, #55CDFC, #55CDFC 20%, #F7A8B8 20%, #F7A8B8 40%, #fff 40%, #fff 60%, #F7A8B8 60%, #F7A8B8 80%, #55CDFC 80%, #55CDFC);
+    height: 2px;
+}
+.card{
+    margin-top: 20px;
+}
+
+/* Cores da bandeira trans */
+:root {
+    --cor-azul: #55CDFC;
+    --cor-rosa: #F7A8B8;
+    --cor-branca: #FFF;
+}
+
+/* Seção Colabore */
+#colabore-menu .main-title::after {
+    background: linear-gradient(to right, var(--cor-azul), var(--cor-azul) 20%, var(--cor-rosa) 20%, var(--cor-rosa) 40%, var(--cor-branca) 40%, var(--cor-branca) 60%, var(--cor-rosa) 60%, var(--cor-rosa) 80%, var(--cor-azul) 80%, var(--cor-azul));
+}
+
+#colabore-menu .card {
+    border: none;
+    background-color: var(--cor-branca);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#colabore-menu .card:hover {
+    transform: translateY(-5px);
+}
+
+#colabore-menu .card i{
+    color: var(--cor-rosa);
+}
+
+#colabore-menu .card h3 {
+    color: var(--cor-azul);
+    margin-top: 15px;
+}
+
+#colabore-menu .card p {
+    color: #555;
+    /* Cor de texto para descrição */
+}
+
+#colabore-menu .btn {
+    background-color: var(--cor-azul);
+    color: var(--cor-branca);
+    border: none;
+}
+
+#colabore-menu .btn:hover {
+    background-color: var(--cor-rosa);
+}
+
+
+.card i {
+    font-size: 4em;
+    color: #555;
+}
+
+.card:hover i {
+    color: #F7A8B8;
+}
+#floating-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#floating-icons.show {
+    opacity: 1;
+}
+
+#floating-icons a {
+    margin-bottom: 10px;
+    color: #F7A8B8;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+#floating-icons a:hover {
+    color: #55CDFC;
+}
+
+/*Footer*/
+
+#contact-area{
+    text-align: center;
+}
+
+.contact-box {
+    padding: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.contact-box i {
+    color: #F7A8B8;
+    border: solid 1px #55CDFC;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+#copy-area{
+        background: linear-gradient(to right, #55CDFC 20%, #F7A8B8 20%, #F7A8B8 40%, #fff 40%, #fff 60%, #F7A8B8 60%, #F7A8B8 80%, #55CDFC 80%, #55CDFC);
+}
+
+#copy-area .container{
+    padding: 10px 0;
+    text-align: center;
+}
+
+#copy-area .container p{
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #444;
+}
+
+/*--------------------------------------------------- Responsividade Tablets------------------------------------- */
+@media (max-width: 768px) {
+
+    /* Geral */
+    .container {
+        padding: 20px;
+    }
+
+    /* Barra de Navegação */
+    .navbar {
+        min-height: 80px;
+    }
+
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 0.5rem 0.8rem;
+    }
+
+    /* Slider */
+    #mainSide .carousel-inner,
+    #mainSide .carousel-item {
+        height: auto;
+    }
+
+    #mainSide .carousel-caption {
+        top: 20%;
+    }
+
+    #mainSide .carousel-caption h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    #mainSide .carousel-caption p {
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+
+    /* Sobre a Ong */
+    .main-title {
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+
+    .main-title::after {
+        width: 10%;
+        top: 40px;
+    }
+
+    /* Postagem */
+    .card img {
+        max-height: 120px;
+    }
+
+    .card i {
+        font-size: 3em;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    /* Time */
+    #time-menu .card-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    #time-menu .card-title::after {
+        width: 10%;
+        bottom: -10px;
+    }
+
+    .card {
+        margin-top: 10px;
+    }
+
+    /* Cores da bandeira trans */
+    :root {
+        --cor-azul: #55CDFC;
+        --cor-rosa: #F7A8B8;
+        --cor-branca: #FFF;
+    }
+    #colabore-menu .main-title::after {
+        background: linear-gradient(to right, var(--cor-azul), var(--cor-azul) 20%, var(--cor-rosa) 20%, var(--cor-rosa) 40%, var(--cor-branca) 40%, var(--cor-branca) 60%, var(--cor-rosa) 60%, var(--cor-rosa) 80%, var(--cor-azul) 80%, var(--cor-azul));
+    }
+
+/* Postagem e Seção Colabore */
+.post-btn,
+.main-btn,
+#colabore-menu .btn {
+    width: 100%;
+}
+
+#colabore-menu .card {
+    margin-bottom: 20px;
+}
+
+#colabore-menu .card i {
+    font-size: 2em;
+}
+
+#colabore-menu .card h3 {
+    margin-top: 10px;
+}
+
+#colabore-menu .card p {
+    font-size: 14px;
+}
+
+#colabore-menu .btn {
+    padding: 8px 16px;
+}
+
+/* Footer */
+#contact-area .contact-box i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Copy Area */
+#copy-area .container p {
+    font-size: 14px;
+}
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+
+    .navbar-brand {
+        font-size: 16px;
+    }
+
+    /* Ajuste do Carrossel */
+    #mainSide .carousel-inner,
+    #mainSide .carousel-item {
+        height: 90vh;
+    }
+
+    #mainSide .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #mainSide .carousel-caption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 0 10px;
+    }
+
+    #mainSide .carousel-caption h2,
+    #mainSide .carousel-caption p {
+        color: #fff;
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Slider */
+    #mainSide .carousel-caption h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    #mainSide .carousel-caption p {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    /* Sobre a Ong */
+    .main-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .main-title::after {
+        width: 8%;
+        top: 30px;
+    }
+
+    /* Postagem */
+    .card img {
+        max-height: 100px;
+    }
+
+    .card i {
+        font-size: 2.5em;
+    }
+
+    .card-body {
+        padding: 8px;
+    }
+
+    /* Time */
+    #time-menu .card-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    #time-menu .card-title::after {
+        width: 8%;
+        bottom: -8px;
+    }
+
+    .card {
+        margin-top: 8px;
+    }
+
+    /* Seção Colabore */
+    #colabore-menu .card h3 {
+        margin-top: 8px;
+    }
+
+    #colabore-menu .card p {
+        font-size: 12px;
+    }
+
+    /* Corrigir Scrolling Lateral */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Ajuste do texto para ficar centralizado na tela */
+    #mainSide .carousel-caption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 0 10px;
+        /* Adicione espaço nas laterais para evitar que o texto encoste nas bordas */
+    }
+
+    #mainSide .carousel-caption h2 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    }
+
+    #mainSide .carousel-caption h2,
+    #mainSide .carousel-caption p {
+        color: #fff;
+        /* Cor do texto no carrossel para garantir visibilidade */
+        text-align: center;
+        max-width: 100%;
+        /* Defina uma largura máxima para o texto */
+        margin: 0 auto;
+        /* Centralizar o texto horizontalmente */
+    }
+
+    /* Ajuste do Carrossel para ocupar a tela inteira */
+    #mainSide .carousel-inner,
+    #mainSide .carousel-item {
+        height: 100vh;
+        /* Ocupar a altura total da tela */
+    }
+
+    #mainSide .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Garante que a imagem cubra completamente o contêiner mantendo a proporção */
+    }
+
+    /* Ajustes na Seção de Artigos Úteis */
+    #postagem-area .post-btn {
+        width: 100%;
+        /* Defina a largura para ocupar 100% da largura disponível */
+        margin-top: 10px;
+        padding: 10px;
+        /* Adicione algum preenchimento para melhor aparência */
+    }
+}
